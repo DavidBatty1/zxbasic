@@ -6,7 +6,7 @@
 ; This code is released under the BSD License
 ; ---------------------------------------------------------
 
-; Implements bothe the LBOUND(array, N) and RBOUND(array, N) function
+; Implements both LBOUND(array, N) and RBOUND(array, N) function
 
 ; Parameters:
 ;   HL = N (dimension)
