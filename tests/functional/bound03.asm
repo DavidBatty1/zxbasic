@@ -59,7 +59,7 @@ __CALL_BACK__:
 ; ZX BASIC Compiler http://www.zxbasic.net
 	; This code is released under the BSD License
 	; ---------------------------------------------------------
-	; Implements bothe the LBOUND(array, N) and RBOUND(array, N) function
+	; Implements both LBOUND(array, N) and RBOUND(array, N) function
 ; Parameters:
 	;   HL = N (dimension)
 	;   [stack - 2] -> LBound table for the var
@@ -85,6 +85,8 @@ _a:
 	DEFW __LABEL0
 _a.__DATA__.__PTR__:
 	DEFW _a.__DATA__
+	DEFW 0
+	DEFW __UBOUND__._a
 _a.__DATA__:
 	DEFB 00h
 	DEFB 00h
